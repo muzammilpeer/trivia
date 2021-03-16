@@ -1,0 +1,20 @@
++ on master screen(quotes) orientation is disable to only potrait mode while
+on other screens orientation is enable.
+
++ Favourite Screen (click on any item opens the question)
++ Font sizes fixes(master and detail screen)
++ Quotes are retrieve that are unread[read=0] and udpated with after reading to [read=1]
++ I remove the stack of screen (mean when quotes is correct then its activity finish before going to the detail activity)
+ and same for detail screen when "Next" button is selected , detail activity finish then call the next activity.
+
++ Do you like dialog is added.
+
+
+Remain fixes:
+
+Scroll bar make big
+radio text multiple line 
+Detail screen - double line (title)
+and reset all counters of read.
+Admobs at detail screen.
+Links remove if not available.

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/bg1"
+    >
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:stretchColumns="1">
+<!--     <View
+       android:layout_height="2dip"
+       android:background="#FF909090" />  -->
+
+	<TableRow>
+		<Button 
+		 android:layout_width="fill_parent"
+		 android:layout_weight="1"
+		 android:layout_height="fill_parent"
+		 android:id="@+id/favourite_btn"
+		 android:gravity="center"
+		 android:background="@drawable/favoritesbtn"
+		 android:drawingCacheQuality="high"
+		 android:onClick="favouriteClickHandler"
+		/>
+		</TableRow>
+		<TableRow>
+		<Button 
+		 android:gravity="center"
+		 android:layout_width="fill_parent"
+		 android:layout_height="fill_parent"
+		 android:layout_weight="1"
+		 android:id="@+id/start_btn"
+		 android:background="@drawable/startbtn"
+		 android:drawingCacheQuality="high"
+		 android:onClick="startClickHandler"
+		/>
+	</TableRow>
+		<TableRow>
+		<Button 
+		 android:gravity="center"
+		 android:layout_width="fill_parent"
+		 android:drawingCacheQuality="high"
+		 android:layout_height="fill_parent"
+		 android:layout_weight="1"
+		 android:id="@+id/aboutme"
+		 android:background="@drawable/aboutmebtn"
+		 android:onClick="aboutmeHandler"
+		/>
+	</TableRow>
+
+</TableLayout>
+</LinearLayout>

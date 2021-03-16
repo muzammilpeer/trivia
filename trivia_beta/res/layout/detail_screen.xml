@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:orientation="vertical"
+  android:background="@drawable/bg2"
+  android:layout_height="fill_parent">
+ <FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res/com.trivia.pkg"
+  android:layout_width="fill_parent"
+  android:configChanges="keyboardHidden|orientation"
+  android:layout_height="fill_parent">
+<LinearLayout
+		  	xmlns:android="http://schemas.android.com/apk/res/android"
+	  		android:layout_width="fill_parent"
+	  		android:orientation="vertical"
+	  		android:layout_height="fill_parent">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:layout_weight="1"
+     >
+    <TableRow>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:orientation="horizontal"
+  android:layout_marginTop="10dp"
+  android:layout_height="fill_parent">
+    <ScrollView 
+		android:id="@+id/ScrollView01" 
+		android:layout_weight="0.9"
+		android:layout_width="wrap_content"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp" 
+		android:paddingTop="10dp" 
+		android:layout_height="wrap_content">
+      <TextView 
+        android:drawableLeft="@drawable/movienamebullet"
+    	android:text="this is the first"
+    	android:id="@+id/detail_title"
+    	android:layout_width="fill_parent"
+    	android:singleLine="false" 
+    	android:textSize="18dp"
+    	android:marqueeRepeatLimit="marquee_forever"
+    	android:layout_height="wrap_content">
+    </TextView>    
+</ScrollView>  
+<Button
+	android:id="@+id/favourite_img"
+	android:layout_weight="0.1"
+	android:layout_width="48dp"
+	android:layout_height="48dp"
+	android:onClick="favouriteHanlder"
+	android:background="@drawable/addtofavicon"
+/>
+    </LinearLayout>
+	</TableRow>
+	<TableRow>
+     <ScrollView 
+		android:id="@+id/ScrollView0001" 
+		android:background="@drawable/boxmoviedetail"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	    <TextView 
+	    	android:text=""
+	    	android:singleLine="false" 
+	    	android:id="@+id/detail_description"
+	    	android:layout_weight="1"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="wrap_content">
+		 </TextView>
+	</ScrollView>
+</TableRow>
+
+</TableLayout>  
+	<LinearLayout
+		  	xmlns:android="http://schemas.android.com/apk/res/android"
+	  		android:layout_width="wrap_content"
+	  		android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="center"
+			android:background="@drawable/boxrating"
+			>
+	  		<TextView
+	  			android:id="@+id/score_line" 
+	  		    android:text="1/10"
+	  		    android:layout_gravity="center"
+	  		    android:textColor="#000000"
+				android:textSize="20dp"
+				android:typeface="serif"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="30dp"	  		    
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+</LinearLayout>
+	<LinearLayout
+		  	xmlns:android="http://schemas.android.com/apk/res/android"
+	  		android:layout_width="fill_parent"
+	  		android:layout_height="wrap_content"
+	  		android:orientation="horizontal"
+	  		android:gravity="center"
+			android:layout_alignParentBottom="true"
+	  		>
+	  		<Button android:text=""
+				android:onClick="linkHandler"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/trailerbtn"
+				android:id="@+id/link1"
+				android:layout_marginRight="20dp"
+				/>
+	  		<Button android:text=""
+				android:onClick="linkHandler"
+				android:layout_marginLeft="20dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/sharebtn"
+				android:id="@+id/link2"
+				/>
+		</LinearLayout>
+<Button
+	android:id="@+id/nextQuestion"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/nextbtn"
+	android:onClick="nextQuestionHandler"
+	android:layout_gravity="center"
+	android:layout_marginLeft="25dp"
+	android:layout_marginRight="25dp"
+/>
+<com.admob.android.ads.AdView
+	android:id="@+id/ad"
+	android:layout_width="fill_parent"
+	android:layout_height="50dp"
+	myapp:backgroundColor="#000000"
+	myapp:primaryTextColor="#FFFFFF"
+	myapp:secondaryTextColor="#CCCCCC"
+	android:layout_alignParentBottom="true"
+	android:layout_weight="0.1"
+/> 
+
+</LinearLayout>
+</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+  	android:background="@drawable/bg2">
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:myapp="http://schemas.android.com/apk/res/com.trivia.pkg"
+  android:layout_width="fill_parent"
+  android:configChanges="keyboardHidden|orientation"
+  android:layout_height="fill_parent">
+<LinearLayout
+		  	xmlns:android="http://schemas.android.com/apk/res/android"
+	  		android:layout_width="fill_parent"
+	  		android:orientation="vertical"
+	  		android:layout_height="fill_parent">
+
+<ScrollView 
+		android:id="@+id/ScrollView01" 
+		android:layout_weight="1"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+<LinearLayout
+		  	xmlns:android="http://schemas.android.com/apk/res/android"
+	  		android:layout_width="fill_parent"
+	  		android:orientation="vertical"
+	  		android:layout_height="fill_parent">
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:layout_weight="1"
+     >
+    <TableRow>
+    <ScrollView 
+		android:id="@+id/ScrollView01" 
+		android:background="@drawable/boxquestion"
+		android:layout_width="wrap_content"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp" 
+		android:paddingTop="10dp" 
+		android:layout_marginTop="10dp"
+		android:layout_height="100dp">
+    <TextView 
+    	android:text="this is the first line of the master screen just to show the question 1 of trivia app.What you think what would be the first question??" 
+    	android:id="@+id/question_id"
+    	android:editable="false" 
+    	android:layout_width="fill_parent"
+    	android:singleLine="false" 
+    	android:layout_height="100dp">
+    </TextView>    
+    </ScrollView>
+	</TableRow>
+	<TableRow>
+	    <TextView 
+    	android:text="T" 
+    	android:id="@+id/exception_text"
+    	android:editable="false" 
+    	android:textSize="12dp"
+    	android:visibility="invisible"
+    	android:gravity="center"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content">
+    </TextView>    
+	</TableRow>
+    <TableRow>
+    <ScrollView 
+		android:id="@+id/ScrollView01" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp" >
+	<LinearLayout
+	  		android:layout_width="fill_parent"
+	  		android:orientation="vertical"
+	  		android:layout_height="wrap_content">
+
+    <RadioGroup
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:id="@+id/mcq_question"
+    	android:layout_gravity="left"
+    	>
+	    <RadioButton android:id="@+id/choice1"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:text=""
+    		android:onClick="choiceClickHandler"
+    	/>
+	    <RadioButton android:id="@+id/choice2"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:text=""
+    		android:onClick="choiceClickHandler"
+    	/>
+	    <RadioButton android:id="@+id/choice3"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:onClick="choiceClickHandler"
+    		android:text=""    	/>
+	    <RadioButton android:id="@+id/choice4"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:onClick="choiceClickHandler"
+    		android:text=""    	/>
+
+    </RadioGroup>
+    </LinearLayout>
+	</ScrollView>
+    </TableRow>
+
+</TableLayout>
+</LinearLayout>
+
+</ScrollView> 
+  
+<com.admob.android.ads.AdView
+	android:id="@+id/ad"
+	android:layout_width="fill_parent"
+	android:layout_height="50dp"
+	myapp:backgroundColor="#000000"
+	myapp:primaryTextColor="#FFFFFF"
+	myapp:secondaryTextColor="#CCCCCC"
+	android:layout_alignParentBottom="true"
+	android:layout_weight="0.1"
+/> 
+   
+</LinearLayout>
+</FrameLayout>
+</LinearLayout>
